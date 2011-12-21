@@ -1,0 +1,19 @@
+inherit font
+
+
+HOMEPAGE="http://linuxlibertine.sourceforge.net/"
+SRC_URI="mirror://sourceforge/linuxlibertine/LinLibertineSRC_${PV%.*}_${PV[4]:0:4}_${PV[4]:4:2}_${PV[4]:6:2}.tgz"
+SRC_DIR=.
+
+src_compile() {
+	lndirs
+	cd ${B}
+	sfd2ttf *.sfd
+}
+
+src_install() {
+	cd ${B}
+	fontinto TTF
+	dofont *.ttf
+}
+DOCS="Bugs.txt ChangeLog.txt GPL.txt LICENCE.txt OFL.txt"
