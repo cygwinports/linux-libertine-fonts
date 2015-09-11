@@ -1,7 +1,0 @@
-category: X11
-requires: fontconfig mkfontdir mkfontscale font-encodings
-sdesc: "Linux Libertine OpenType fonts"
-ldesc: "Linux Libertine aims at creating a free alternative to the 
-standard Times font. They have been developed from scratch and go 
-different ways in typography than the Times or Arial. Just the 
-useability and the dimensions shall be similar."
